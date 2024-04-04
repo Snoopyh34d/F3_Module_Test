@@ -1,6 +1,6 @@
 # F3_Module_Test
 
-Crypto Market Data Viewer
+**Crypto Market Data Viewer**
 
 This project is a simple web application that fetches cryptocurrency market data from the CoinGecko API and displays it in a tabular format. Users can search for specific cryptocurrencies, filter the data based on their input, and sort the data by market capitalization or percentage change.
 
