@@ -69,6 +69,18 @@ function createRow(obj) {
   }
   tbody.appendChild(row);
 }
+function createRow(obj) {
+    const row = document.createElement("tr");
+    row.id = `${obj.id}`;
+    row.classList.add('row');
+    row.innerHTML = `<td><img src="${obj.image}" alt="${obj.name}"/> ${obj.name}</td>
+                     <td>${obj.symbol.toUpperCase()}</td>
+                     <td class="text-right">$${obj.current_price}</td>
+                     <td class="text-right">$${obj.total_volume}</td>
+                     <td class="${obj.price_change_percentage_24h >= 0 ? 'td-green' : 'td-red'}">${obj.price_change_percentage_24h.toFixed(2)}%</td>
+                     <td>Mkt Cap: ${obj.market_cap}</td>`;
+    tbody.appendChild(row);
+}
 
 // search box event
 // console.log(searchBox);
